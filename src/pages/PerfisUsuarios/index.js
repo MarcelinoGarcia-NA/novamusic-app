@@ -27,18 +27,10 @@ export default function Categorias() {
   useEffect(() => {
     async function loadList() {
 
-      if (search_category === "categoria") {
-        const response = await api.get("/users/category/" + id);
-        setList(response.data);
-      } else if (id_search_style !== "") {
-        const response = await api.get("/users/stylemusic/" + id_search_style);
-        if (response != null) {
-          setList(response.data);
-        }
-      } else {
+     
         const response = await api.get("/users");
         setList(response.data);
-      }
+
     }
     loadList();
   }, [list]);
