@@ -18,7 +18,7 @@ export default function Categorias() {
   const url_atual = window.location.href;
   const id = url_atual.substring(32);
   const id_search_style = url_atual.substring(22);
-  const search_category = url_atual.substring(22, 31);
+  const search_category = url_atual.substring(31, 42);
   const [deleteUser, setDeleteUser]=useState(false);
   const [icon,setIcon]=useState();
   const iconS="";
