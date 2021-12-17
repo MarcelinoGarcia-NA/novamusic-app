@@ -1,0 +1,42 @@
+.container-users{
+    width: 30%;
+    margin-left: 2%;
+    height: 200px;
+    float:left;
+}
+.container-center-users{
+    margin-left: 15%;
+    margin-top: 200px;
+    width: 65%;
+}
+.container-perfil-users{
+    width: 50%;
+    float: left;
+    position: absolute;
+}
+.image-perfil-user{
+    height: 80%;
+    border-radius: 18px;
+    width:95%;
+    float: left;
+}
+.image-perfil-user:hover{
+    cursor: pointer;
+    height: 90%;
+    border-radius: 18px;
+    width:100%;
+    float: left;
+}
+.title,.style-music{
+    cursor: pointer;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+#btn-cancelar{
+    float: right;
+     margin-top: 30px;
+     margin-right: 15%;
+}

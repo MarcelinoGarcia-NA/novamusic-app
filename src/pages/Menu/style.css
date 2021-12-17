@@ -1,0 +1,91 @@
+.nav-wrapper{
+    background-color:   #f5f5f5;
+}
+.brand-logo{
+    margin-left: 10%;
+}
+.button-login{
+    float: right;
+}
+#btn-login-menu{
+    background-color:#7b3ab6;
+}
+.name-category{
+    color:#7b3ab6;
+}
+.styleMusic-container{
+    width: 70%;
+    margin-left: 16.4%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#styleMusic-list,.styleMusic-nav{
+    border-radius: 40px;
+    background-color:#724bbd;
+}
+.nav-style-music { 
+    text-align: center;
+    width: 120px;
+ }
+ .nav-style-music ul{
+     display: none;
+     position: absolute;
+ }
+.nav-style-music:hover ul{
+    display: block;
+    position:absolute;
+    background-color:#724bbd;
+    width: 135px;
+}
+.styleMusic-container-mobile{
+    display: none;
+}
+@media screen and (min-width: 80px) and (max-width: 1000px) { 
+
+    #btn-login-menu{
+        background-color:#7b3ab6;
+    }
+    nav{
+        height: 70px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .brand-logo{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+    }
+    .styleMusic-container{
+       display: none;
+    }
+    .styleMusic-container-mobile{
+        display: inline;
+    }
+    #btn-mobile{
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        font-size: 30px;
+        float: right;
+        color: white;
+        padding: 5px;
+        margin-right: 5%;
+        margin-left: 70%;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: #7b3ab6;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px) { 
+    
+   .styleMusic-container{
+       width: 80%;
+       margin-left: 10%;
+   }
+}
+
+

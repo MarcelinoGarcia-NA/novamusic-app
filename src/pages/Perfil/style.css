@@ -1,0 +1,67 @@
+
+.Perfil-container-perfil-user{
+    background-color: #f5f5f5;
+    border:2px solid #7b3ab6;
+    border-radius: 15px;
+    width: 150px;
+    height: 270px;
+    position:static;
+    float: left;
+    margin-right: 20px;
+}
+.circle{
+    width: 90px;
+    border-radius: 2px;
+    object-fit: cover;
+    height: 70px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.Perfil-dados-user{
+    margin-left: 15%;
+    font-size: 13px;
+    text-align: center;
+    color: black;
+}
+#alterarperfil{
+    color: #7b3ab6;
+    cursor:pointer;
+}
+
+@media screen and (min-width: 80px) and (max-width: 600px) { 
+    .Perfil-container-perfil-user{
+      width: 100%;
+      height: 140px;
+      margin-bottom: 20px;
+    }
+    .Perfil-dados-user{
+        float: left;
+        width: 70%;
+        margin-left: 5%;
+        font-size: 13px;
+        text-align: center;
+        color: black;
+        background-color:white;
+    }
+    .circle{
+        width: 90px;
+        border-radius: 2px;
+        object-fit: cover;
+        height: 90px;
+        margin-left: 20px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    #alterarperfil{
+        color: #7b3ab6;
+        float: left;
+        cursor:pointer;
+    }
+}
+@media screen and (min-width: 80px) and (max-width: 600px) { 
+    .Perfil-container-perfil-user{
+      width: 100%;
+      height: 140px;
+      margin-bottom: 20px;
+    }
+}
