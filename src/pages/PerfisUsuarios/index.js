@@ -28,7 +28,7 @@ export default function Categorias() {
     async function loadList() {
 
      
-        const response = await api.get("/users");
+        const response = api.get("/users");
         setList(response.data);
 
     }
