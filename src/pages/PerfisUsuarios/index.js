@@ -80,12 +80,23 @@ export default function Categorias() {
   const recebeUser = JSON.parse(localStorage.getItem(USER));
 if((list.length===0)&&(recebeUser === null)){
     return(
-    <div class="PerfisUsuarios-container-center-notusers">
-       <img class="img-notusers"src={AlertNotUser}></img>
-       <p class="notusers-opps">Opps,</p>
-       <p class="notusers-p">Não existem artistas nesta categoria ou estilo musical!<br></br>
-       Você é um artista? Se <Link to="/cadastro">ingresse</Link> em nossa plataforma</p>
-    </div>
+   <div class="PerfisUsuarios-container-center-users">
+        {list && list.map(users =>
+
+          <div class="PerfisUsuarios-container-users">
+            <Link to={"/perfilcontrato/" + users._id}>
+              <img class="PerfisUsuarios-image-perfil-user" src={"https://img.youtube.com/vi/" + users.link_youtube.substring(32) + "/maxresdefault.jpg"}></img>
+              <ul class="PerfisUsuarios-container-perfil-users">
+                <li class="PerfisUsuarios-title">{users.name_artistic}</li>
+                <li class="PerfisUsuarios-style-music">{users.style_music}</li>
+              </ul>
+            </Link>
+              <img src={icon_delete} class="PerfisUsuarios-icon-deletar" onClick={event=>deletar(users._id)}>
+              </img>
+          </div>
+        )
+        }
+      </div>
     );
   }else if((list.length===0)&&(recebeUser !== null)){
     return(
