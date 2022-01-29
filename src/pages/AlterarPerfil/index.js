@@ -16,10 +16,11 @@ export default function AlterarPerfil({ history }) {
 
     const email = recebeUser.email;
     const password= recebeUser.password;
-    const [name_artistic, setNome_artistic] = useState(recebeUser.name_artistic);
-    const [style_music, setStyle_music] = useState(recebeUser.style_music);
-    const [link_youtube, setYoutube] = useState(recebeUser.link_youtube);
-    const [link_whats, setWhats] = useState(recebeUser.link_whats);
+    const [name_artistic, setNome_artistic] = useState("");
+    const telephone="Nova Andradina";
+    const [style_music, setStyle_music] = useState("");
+    const [link_youtube, setYoutube] = useState("");
+    const [link_whats, setWhats] = useState("");
     const [price_cache, setPrice] = useState("");
     const [category, setCategory] = useState("");
     const [img,setImg] = useState("");
@@ -72,6 +73,7 @@ export default function AlterarPerfil({ history }) {
                     email,
                     password,
                     name_artistic,
+                    telephone,
                     category,
                     style_music,
                     link_youtube,
@@ -108,16 +110,16 @@ export default function AlterarPerfil({ history }) {
                     <label for="email_inline" >Email</label>
                     <input id="email_inline" type="email" class="validate" value={recebeUser.email} ></input>
                     <label for="nome_artistic_inline">Nome Artisitco</label>
-                    <input id="nome_artistic_inline" type="text" placeholder={recebeUser.name_artistic} value={name_artistic}  class="validate"  onChange={event => setNome_artistic(event.target.value)}></input>
+                    <input id="nome_artistic_inline" type="text" placeholder={recebeUser.name_artistic}  class="validate"  onChange={event => setNome_artistic(event.target.value)}></input>
 
                     <label for="youtube_inline">Link video YouTube</label>
-                    <input id="youtube_inline" type="text" class="validate"  placeholder={recebeUser.link_youtube} value={link_youtube}  onChange={event => setYoutube(event.target.value)}></input>
+                    <input id="youtube_inline" type="text" class="validate" placeholder={recebeUser.link_youtube}  onChange={event => setYoutube(event.target.value)}></input>
 
                     <label for="Whatsapp_inline">Link Whatsapp</label>
-                    <input id="Whatsapp_inline" type="text" class="validate"  placeholder={recebeUser.link_whats} value={link_whats} onChange={event => setWhats(event.target.value)}></input>
+                    <input id="Whatsapp_inline" type="text" class="validate" placeholder={recebeUser.link_whats} onChange={event => setWhats(event.target.value)}></input>
 
                     <label for="price_cache_inline">Preço do cache por hora</label>
-                    <input id="price_cache_inline" type="number" class="validate" placeholder="R$" onChange={event => setPrice("R$"+event.target.value)}></input>
+                    <input id="price_cache_inline" type="text" class="validate" placeholder="R$" onChange={event => setPrice("R$"+event.target.value)}></input>
                     <label htmlFor="cat">Categoria</label>
                     <select id="categoria" name="cat" onChange={event => setCategory(event.target.value)} className="browser-default">
                         <option value="" disabled selected>Escolha uma Categoria</option>
@@ -131,7 +133,7 @@ export default function AlterarPerfil({ history }) {
                     <label htmlFor="cat">Estilo musical</label>
                     <select id="categoria" name="cat" onChange={event => setStyle_music(event.target.value)} className="browser-default">
                         <option value="" disabled selected>Escolha um estilo musical</option>
-                            <option value={"ROCK"}>ROCK</option>
+                            <option value={"ROCK"}>Rock</option>
                             <option value={"SERTANEJO"}>SERTANEJO</option>
                             <option value={"GOSPEL"}>GOSPEL</option>
                             <option value={"FUNK"}>FUNK</option>

@@ -15,7 +15,7 @@ export default function Cadastro({ history }) {
     const telephone="Nova Andradina";
     const [style_music, setStyle_music] = useState("");
     const [link_youtube, setYoutube] = useState("");
-    const [link_whats, setWhats] = useState("(67)");
+    const [link_whats, setWhats] = useState("(67");
     const [price_cache, setPrice] = useState("");
     const [category, setCategory] = useState("");
     const [img,setImg] = useState("");
@@ -32,12 +32,11 @@ export default function Cadastro({ history }) {
 
     async function cadastrar(event) {
         event.preventDefault();
-       
         if((password.length<8)||(/^[a-zA-Z0-9]+$/.test(password))){
             return(
                 confirmAlert({
                     title: 'Atenção!',
-                    message: 'A senha deverá ser superior a 8 digítos contendo um caractere especial!',
+                    message: 'A senha deverá ser superior a 8 digítos contendo um caractere!',
                     buttons: [
                       {
                         label: 'ok'
@@ -46,9 +45,9 @@ export default function Cadastro({ history }) {
                     ]
                   })
             );
-        }if(listUsers !==null){
+        }else if(listUsers !==null){
             listUsers.map(z=>{
-                 if(z.email===email){
+                if(z.email===email){
                     return(confirmAlert({
                         title: 'Atenção!',
                         message: 'O e-mail já se encontra na base de dados!',
@@ -59,8 +58,8 @@ export default function Cadastro({ history }) {
                           }
                         ]
                       }));
-                }else  if(z.name_artistic===name_artistic){
-                return(  confirmAlert({
+                } if(z.name_artistic===name_artistic){
+                return(confirmAlert({
                     title: 'Atenção!',
                     message: 'O nome artistico já se encontra na base de dados!',
                     buttons: [
@@ -70,8 +69,8 @@ export default function Cadastro({ history }) {
                       }
                     ]
                   }));
-            }else if(z.link_youtube===link_youtube){
-                return(  confirmAlert({
+            }if(z.link_youtube===link_youtube){
+                return(confirmAlert({
                     title: 'Atenção!',
                     message: 'O link video YouTube já se encontra na base de dados!',
                     buttons: [
@@ -83,8 +82,9 @@ export default function Cadastro({ history }) {
                   }));
             }
         });
-        }if ((email!=="") && (password !=="") && (name_artistic !== "") && (style_music !=="") && (link_youtube.substring(0,32)=="https://www.youtube.com/watch?v=") && (link_whats !=="")) {   
-        try {  
+        } if ((email!=="") && (password !=="") && (name_artistic !== "") && (style_music !=="") && (link_youtube.substring(0,32)=="https://www.youtube.com/watch?v=") && (link_whats !=="")) {
+        try {
+                
                 const user = {
                     email,
                     password,
@@ -106,7 +106,7 @@ export default function Cadastro({ history }) {
             } catch (erro) {
                 confirmAlert({
                     title: 'Atenção!',
-                    message: 'E-mail já está presente na base de dados!',
+                    message: 'Ocorreu um erro no cadastro!',
                     buttons: [
                       {
                         label: 'ok'
@@ -156,10 +156,10 @@ export default function Cadastro({ history }) {
                     <input id="youtube_inline" type="text" class="validate" onChange={event => setYoutube(event.target.value)}></input>
 
                     <label for="Whatsapp_inline">Telefone Whatsapp:</label>
-                    <input id="Whatsapp_inline" type="tel" class="validate" value={link_whats} onChange={event => setWhats(event.target.value)}></input>
+                    <input id="Whatsapp_inline" type="number" class="validate" value={link_whats} onChange={event => setWhats(event.target.value)}></input>
 
                     <label for="price_cache_inline">Preço do cache por hora</label>
-                    <input id="price_cache_inline" type="number" class="validate" placeholder="R$" onChange={event => setPrice("R$"+event.target.value)}></input>
+                    <input id="price_cache_inline" type="text" class="validate" placeholder="R$" onChange={event => setPrice("R$"+event.target.value)}></input>
                     <label htmlFor="cat">Categoria</label>
 
                     <select id="categoria" name="cat" onChange={event => setCategory(event.target.value)} className="browser-default">
@@ -175,7 +175,7 @@ export default function Cadastro({ history }) {
                     <label htmlFor="cat">Estilo musical</label>
                     <select id="categoria" name="cat" onChange={event => setStyle_music(event.target.value)} className="browser-default">
                         <option value="" disabled selected>Escolha um estilo musical</option>
-                            <option value={"ROCK"}>ROCK</option>
+                            <option value={"ROCK"}>Rock</option>
                             <option value={"SERTANEJO"}>SERTANEJO</option>
                             <option value={"GOSPEL"}>GOSPEL</option>
                             <option value={"FUNK"}>FUNK</option>
