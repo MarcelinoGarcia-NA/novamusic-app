@@ -5,7 +5,7 @@ import axios from 'axios';
 import { getToken } from './auth';
 
 const api = axios.create({
-   baseURL: 'https://novamusic.herokuapp.com/',
+   baseURL: 'https://api-novamusic.herokuapp.com/',
 });
 
 api.interceptors.request.use(async config => {
