@@ -6,11 +6,12 @@ import { userLocal } from '../../services/auth';
 import icon_delete from '../../images/deletar.png';
 import icon_alert from '../../images/alert.png';
 import { confirmAlert } from 'react-confirm-alert';
+import Logo from '../../images/logo-login.png';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import AlertNotUser from '../../images/proibido.png';
-
+import ROCK from '../../images/rock.png';
 export default function Categorias() {
-
+   
 
   const [list, setList] = useState([]);
   const [x, setX] = useState([]);
@@ -19,7 +20,8 @@ export default function Categorias() {
   const id_search_style = url_atual.substring(22);
   const search_category = url_atual.substring(22, 31);
   const [deleteUser, setDeleteUser]=useState(false);
-
+  const [icon,setIcon]=useState();
+  const iconS="";
   const TOKEN_KEY = "@NOVAMUSIC/token";
   const USER = "@NOVAMUSIC:user";
   useEffect(() => {
@@ -40,6 +42,7 @@ export default function Categorias() {
     }
     loadList();
   }, [list]);
+
   async function updateView(user_id) {
 
       const views="";
@@ -79,6 +82,8 @@ export default function Categorias() {
       })
     }
   }
+  
+
 
   const recebeUser = JSON.parse(localStorage.getItem(USER));
 if((list.length===0)&&(recebeUser === null)){
@@ -105,7 +110,7 @@ if((list.length===0)&&(recebeUser === null)){
         {list && list.map(users =>
           <Link to={"/perfilcontrato/" + users._id} >
             <div class="PerfisUsuarios-container-users" onClick={event=>updateView(users._id)}>
-              <img class="PerfisUsuarios-image-perfil-user" src={"https://img.youtube.com/vi/" + users.link_youtube.substring(32) + "/maxresdefault.jpg"}></img>
+              <img class="PerfisUsuarios-image-perfil-user" alt="Imagem indisponível!" src={"https://img.youtube.com/vi/" + users.link_youtube.substring(32) + "/maxresdefault.jpg"}></img>
               <ul class="PerfisUsuarios-container-perfil-users">
                 <li class="PerfisUsuarios-title">{users.name_artistic}</li>
                 <li class="PerfisUsuarios-style-music">{users.style_music}</li>

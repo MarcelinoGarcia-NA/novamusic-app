@@ -30,7 +30,7 @@ export default function Login({ history }) {
         } catch (erro) {
             confirmAlert({
                 title: 'Atenção!',
-                message: 'Ocorreu um erro ao logar!',
+                message: 'E-mail ou senha inválido!',
                 buttons : [
                   {
                     label:"ok"

@@ -6,14 +6,14 @@
 }
 .container-info{
     width: 100%;
-    height: 270px;
+    height: 240px;
 }
 .PerfilContrato_container-perfil{
     width: 100%;
     margin: 0 auto;
     background-image: url('../../images/banner.jpg');
     object-fit: cover;
-    height: 1450px;
+    height: 1550px;
 }
 .PerfilContrato_data_users{
     width: 849px;
@@ -25,11 +25,11 @@
     background-color: #7b3ab6;
     border-radius: 10px;
     padding: 1%;
-    margin-left: 25%;
+    margin-left: 15%;
     text-align: center;
     color:white;
     float: left;
-    width: 50%;
+    width: 70%;
     height: 60px;
     font-size: 30px;
 }
@@ -66,27 +66,45 @@
     text-align: center;
     color:white;
     margin-left: 5%;
-    background-color: #5385CC;
+    margin-bottom: 30px;
+    background-color: #6d98d3;
     border-radius: 30px;
     float: left;
     width: 50%;
-    height: 50px;
+    height: 120px;
     font-size: 20px;
 }
 #PerfilContrato_data_users-local{
     width: 70%;
     height: 20px;
+    color: white;
     border-bottom-color: white;
     margin-top: 10px;
-    margin-left: 2%;
+    margin-left: 8%;
     float:left;
 }
+#PerfilContrato_data_sobre-save{
+    width: 70%;
+    height: 20px;
+    color: #7b3ab6;
+    border-bottom-color: #7b3ab6;
+    margin-top: 10px;
+    margin-left: 8%;
+    float:left;
+}
+
 #PerfilContrato_data_users-local::placeholder{
    color:#f5f5f5
 }
 #btn-salvar-local{
     width: 18%;
-    margin-top: 7px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: #060122;
+}
+#btn-salvar-sobre{
+    width: 18%;
+    margin-left: 80%;
     border-radius: 20px;
     background-color: #060122;
 }
@@ -117,12 +135,12 @@
     font-size: 20px;
 }
 .PerfilContrato_data_users-whats{
-    margin-right: 2%;
+    margin-right: 10%;
     width: 27%;
     padding: 0.5%;
     background-color:#7b3ab6;
     border-radius: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
     color:white;
     float: right;
@@ -159,8 +177,51 @@
 .PerfilContrato_data_users_map{
     margin-top: 10px;
     width: 100%;
-    height: 500px;
+    height: 380px;
     margin-bottom: 100px;
+}
+.PerfilContrato_data_users-sobre{
+    margin-top: 20px;
+    text-align: center;
+    color:white;
+    margin-left: 5%;
+    margin-bottom: 30px;
+    background-color: #f8fbff;
+    border:0.2px solid #7b3ab6;
+    border-radius: 30px;
+    float: left;
+    width: 90%;
+    height: 140px;
+    font-size: 20px;
+}
+.PerfilContrato_data_sobre-artista{
+    
+    text-align: center;
+    color:white;
+    margin-left: 5%;
+    margin-bottom: 30px;
+    background-color: #f8fbff;
+    border:0.5px solid #7b3ab6;
+    border-radius: 10px;
+    float: left;
+    width: 90%;
+    height: 140px;
+    font-size: 20px;
+}
+.PerfilContrato_data_sobre-artista-label{
+    
+    color:#7b3ab6;
+    font-size: 25px;
+    margin-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.PerfilContrato_data_sobre-artista-p{
+    color:#7b3ab6;
+    font-size: 20px;
+    margin-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 @media screen and (min-width: 100px) and (max-width: 849px) { 
     .PerfilContrato_data_users{
@@ -185,5 +246,26 @@
         font-size: 17px;
         
     }
-    
+    .PerfilContrato_data_users-whats{
+        font-size: 10px;
+        width: 33%;
+        margin-right:33%;
+        height: 40px;
+     }
+     .PerfilContrato_data_users-contact{
+        margin-top: 20px;
+        text-align: center;
+        color:white;
+        margin-left: 0%;
+        margin-bottom: 30px;
+        background-color: #5385CC;
+        border-radius: 30px;
+        float: left;
+        width: 100%;
+        height: 120px;
+        font-size: 20px;
+    }
+    .PerfilContrato_data_sobre-artista{
+        height: auto;
+    }
 }    
