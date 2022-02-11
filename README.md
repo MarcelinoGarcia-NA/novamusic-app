@@ -1,6 +1,6 @@
 # Instalação e desmonstração do projeto NovaMusic
 
-# Tecnologias ultilizadas 
+# Tecnologias utilizadas 
 ![React Badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![JavaScript Badge]( https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![Heroku Badge](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 
 # Tela inicial do site Nova Music
@@ -36,7 +36,7 @@ A api do projeto NovaMusic poderá ser visualizada segue o link para acesso:
 Link do Git:
 # https://github.com/MarcelinoGarcia-NA/api_novamusic
 
-Link da aplicação no Heroku:
+Link da api no Heroku:
 
 # https://api-novamusic.herokuapp.com/
 
