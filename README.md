@@ -12,7 +12,7 @@
 
 # Sobre o projeto:
 
-O Projeto é uma plataforma de Marketing Musical, na qual é especifica para os artista de Nova Andradina - MS, Brasil. O projeto está em operação de atualização, com o panejamento futuro de validação de mercado, esta fase presente consiste em um estudo.
+O Projeto é uma plataforma de Marketing Musical, na qual é especifica para os artista de Nova Andradina - MS, Brasil. O projeto está em operação de atualização, com o planejamento futuro de validação no mercado, a presente fase consiste em um projeto de estudo.
 
 
 # Executando o projeto: 
@@ -39,6 +39,20 @@ Link do Git:
 Link da api no Heroku:
 
 # https://api-novamusic.herokuapp.com/
+
+# Outras imagens do projeto
+
+![login](https://user-images.githubusercontent.com/64509713/153660440-fb8852e2-ea9c-40cc-b1df-6905c529b383.png)
+
+![Cadastro](https://user-images.githubusercontent.com/64509713/153660567-2d17b4af-a3f3-41b8-9a9b-a02c7fa84f86.png)
+
+![admin](https://user-images.githubusercontent.com/64509713/153660725-1fb75e87-88a4-4eeb-9bcd-bb9dd8cc4ecf.png)
+
+![notificação](https://user-images.githubusercontent.com/64509713/153660910-83c550af-c93a-4c8d-946c-8792bd2b8f8c.png)
+
+![RecuperarAcesso](https://user-images.githubusercontent.com/64509713/153661113-75ca23c7-76a9-41f0-b5a9-dfe5c7b29a51.png)
+
+![Perfil2](https://user-images.githubusercontent.com/64509713/153661129-92fabbe7-b4fb-4e83-a711-56ec704f5775.png)
 
 
 
