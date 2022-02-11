@@ -1,4 +1,4 @@
-# Instalação e desmonstração do projeto NovaMusic
+# Instalação e desmonstração do projeto NovaMusic ![NovaMusic Badge](https://lh3.googleusercontent.com/a-/AOh14GhoVJCc7Joh5HHxaHCBP57zRAyg_9OHVul2FhCK=s96-c-rg-br100)
 
 # Tecnologias utilizadas 
 ![React Badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![JavaScript Badge]( https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![Heroku Badge](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
@@ -31,7 +31,7 @@ Após todas as dependências baixadas (Node_modules), será possível executar o
 
 Com tudo feito é possível notar que a aplicação front_end consome uma api, no qual o dev Marcelino que desenvolveu e hospedou na plataforma Heroku. 
 
-A api do projeto NovaMusic poderá ser visualizada segue o link para acesso:
+A api do projeto NovaMusic poderá ser visualizada, segue o link para acesso:
 
 Link do Git:
 # https://github.com/MarcelinoGarcia-NA/api_novamusic
@@ -39,6 +39,10 @@ Link do Git:
 Link da api no Heroku:
 
 # https://api-novamusic.herokuapp.com/
+
+# Aviso na execução do projeto em modo local
+
+O modal de notificação é recurso ultilizado da propria biblioteca react, uma vez que a estilização é padrão. No entanto, dentro da node_modules efetivamos a alterarção da estlização e do codigo TypeScrip, que conseguimos notar na aplicação hospedada no plataform Netlify. O usuário ao efetivar o download e executar localmente terá presente no projeto a estilização padrão do model de notificação react.
 
 # Outras imagens do projeto
 
