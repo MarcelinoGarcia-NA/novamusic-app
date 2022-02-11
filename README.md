@@ -1,7 +1,32 @@
 # Instalação e desmonstração do projeto NovaMusic
 
-#Sobre o projeto:
+# Sobre o projeto:
 
 O Projeto é uma plataforma de Marketing Musical, na qual é especifica para os artista de Nova Andradina - MS, Brasil.
+
+# Executando o projeto: 
+
+Para a execução do projeto é necessário algumas tecnologia, Yarn ou Npm. Após baixar o projeto via git, acesse a pasta do projeto em sua máquina e dentro da raiz do projeto execute a linha de comando via terminal :
+
+# yarn install 
+
+ou 
+
+# npm install
+
+Após todas as dependências baixadas (Node_modules), será possível executar o projeto. Para isso execute o comando seguinte:
+
+# npm start 
+
+Com tudo feito é possível notar que a aplicação front_end consome uma api, no qual o dev Marcelino que desenvolveu e hospedou na plataforma Heroku. 
+
+A api do projeto NovaMusic poderá ser visualizada segue o link para acesso:
+
+Link do Git:
+# https://github.com/MarcelinoGarcia-NA/api_novamusic
+
+Link da aplicação no Heroku:
+
+# https://api-novamusic.herokuapp.com/
 
 
