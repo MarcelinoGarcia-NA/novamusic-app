@@ -1,7 +1,7 @@
 # Instalação e desmonstração do projeto NovaMusic ![NovaMusic Badge](https://lh3.googleusercontent.com/a-/AOh14GhoVJCc7Joh5HHxaHCBP57zRAyg_9OHVul2FhCK=s96-c-rg-br100)
 
 # Tecnologias utilizadas 
-![React Badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![JavaScript Badge]( https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![Heroku Badge](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white) [Netlify Badge](	https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![React Badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![JavaScript Badge]( https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![Heroku Badge](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white) ![Netlify Badge](	https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
 # Tela inicial do site Nova Music
 ![TelaInicial](https://user-images.githubusercontent.com/64509713/153658063-49323af4-6bfa-4bd9-b357-ddea46ed2c3d.png)
