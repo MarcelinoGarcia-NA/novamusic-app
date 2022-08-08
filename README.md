@@ -10,7 +10,7 @@
  
  # https://namusic.netlify.app/
 
-# Sobre o projeto:
+# [Sobre o projeto:][Após todas as dependências baixadas (Node_modules), será possível executar o projeto. Para isso execute o comando seguinte:]
 
 O Projeto é uma plataforma de Marketing Musical, na qual é especifica para os artista de Nova Andradina - MS, Brasil. O projeto está em operação de atualização, com o planejamento futuro de validação no mercado, a presente fase consiste em um projeto de estudo.
 
