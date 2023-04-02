@@ -16,9 +16,9 @@ export default function Categorias() {
   const [list, setList] = useState([]);
   const [x, setX] = useState([]);
   const url_atual = window.location.href;
-  const id = url_atual.substring(45);
-  const id_search_style = url_atual.substring(35);
-  const search_category = url_atual.substring(35, 44);
+  const id = url_atual.substring(32);
+  const id_search_style = url_atual.substring(32);
+  const search_category = url_atual.substring(32, 41);
   const [deleteUser, setDeleteUser]=useState(false);
   const [icon,setIcon]=useState();
   const iconS="";
