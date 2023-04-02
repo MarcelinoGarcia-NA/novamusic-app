@@ -5,8 +5,12 @@
 
 # Tela inicial do site Nova Music
 ![TelaInicial](https://user-images.githubusercontent.com/64509713/153658063-49323af4-6bfa-4bd9-b357-ddea46ed2c3d.png)
+ 
+# Link na Vercel
 
- # link do acesso do site hospedado con Netlify
+# https://novamusic-app.vercel.app/
+
+# link do acesso do site hospedado con Netlify
  
  # https://namusic.netlify.app/
 
@@ -39,10 +43,6 @@ Link do Git:
 Link da api no Heroku:
 
 # https://api-novamusic.herokuapp.com/
-
-Link na Vercel
-
-#https://novamusic-app.vercel.app/
 
 # Aviso na execução do projeto em modo local
 
