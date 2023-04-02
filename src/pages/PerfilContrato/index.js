@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import icon_alert from '../../images/alert.png';
-
+import { useParams } from 'react-router-dom';
 
 export default function PerfilContrato({ history }) {
   const [list, setList] = useState([]);
