@@ -20,7 +20,7 @@ export default function Routes() {
            <Route  path="/login" component={Login} />
            <Route path="/cadastro" component={Cadastro}/>
            <Route path="/alterarperfil" component={AlterarPerfil}/>
-           <Route path="/perfilContrato" component={PerfilContrato}/>
+           <Route path="/perfilContrato/:id" component={PerfilContrato}/>
            <Route path="/recuperarAcesso" component={RecuperarAcesso}/>
            <> 
              <Menu/>
