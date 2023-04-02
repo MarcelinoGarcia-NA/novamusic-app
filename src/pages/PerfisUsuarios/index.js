@@ -108,7 +108,7 @@ if((list.length===0)&&(recebeUser === null)){
     return (
       <div class="PerfisUsuarios-container-center-users">
         {list && list.map(users =>
-          <Link to={"/perfilcontrato/" + users._id} >
+         <Link to={`/perfilcontrato/${users._id}`}>
             <div class="PerfisUsuarios-container-users" onClick={event=>updateView(users._id)}>
               <img class="PerfisUsuarios-image-perfil-user" alt="Imagem indisponível!" src={"https://img.youtube.com/vi/" + users.link_youtube.substring(32) + "/maxresdefault.jpg"}></img>
               <ul class="PerfisUsuarios-container-perfil-users">
