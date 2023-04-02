@@ -12,7 +12,8 @@ import icon_alert from '../../images/alert.png';
 export default function PerfilContrato({ history }) {
   const [list, setList] = useState([]);
   const url_atual = window.location.href;
-  const id = url_atual.substring(50);
+  //const id = url_atual.substring(50);
+  const {id}=useParams();
   const [telephone, setCelular] = useState("");
   const [data_show, setData_show] = useState("");
   const [horario_show, setHorario_show] = useState("");
