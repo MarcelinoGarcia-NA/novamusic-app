@@ -40,6 +40,10 @@ Link da api no Heroku:
 
 # https://api-novamusic.herokuapp.com/
 
+Link na Vercel
+
+#https://novamusic-app.vercel.app/
+
 # Aviso na execução do projeto em modo local
 
 O modal de notificação é recurso ultilizado da propria biblioteca react, uma vez que a estilização é padrão. No entanto, dentro da node_modules efetivamos a alterarção da estlização e do codigo TypeScrip, que conseguimos notar na aplicação hospedada no plataform Netlify. O usuário ao efetivar o download e executar localmente terá presente no projeto a estilização padrão do model de notificação react.
